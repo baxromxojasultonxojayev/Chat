@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="chat">
+        <div class="head">
+            <img src="http://picsum.photos//300" alt="">
+            <img src="./telephone-icon.jpg" class="phone"alt="">
+            <img src="./vide_camera-icon.png" class="video" alt="">
+            
+            <button class="title-button">
+                <h1>Mr.NoNAME</h1>
+                <p>Last seen recently</p>
+            </button>
+        </div>
+
+        <main>
+            <ul class="chat-list">
+                <li class="chat-item inbox">
+                    <p class="chat-text"></p>
+                </li>
+                <li class="chat-item outbox">
+                    <p class="chat-text"></p>
+                </li>
+            </ul>
+        </main>
+
+        <footer>
+            <form class="chat-form">
+                <label class="chat-label">
+                    <textarea class="chat-type" placeholder="Text right"></textarea>
+                    <button class="chat-send" type="submit">
+                        <img src="./send-icon.png">
+                    </button>
+                </label>
+                <!-- <label>
+                    <textarea class="chat-type" placeholder="Write here"></textarea>
+                    <button class="chat-send" type="submit">Send</button>
+                </label> -->
+            </form>
+
+            <form class="chat-form-1">
+                <label class="chat-label-1">
+                    <textarea class="chat-type-1" placeholder="Text left"></textarea>
+                    <button class="chat-receive" type="submit">
+                        <img src="./send-icon.png">
+                    </button>
+                </label>
+            </form>
+        </footer>
+    </div>
+    
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
