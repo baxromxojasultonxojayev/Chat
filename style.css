@@ -16,7 +16,7 @@ body{
 .chat{
     max-width: 100%;
     /* min-height: 300px; */
-    padding: 15px 25px;
+    padding: 26px 8px;
     border: 1px solid #7540FE;
     background:#8D67F9; 
     border-radius: 40px;
@@ -27,6 +27,37 @@ body{
     display: flex;
     align-items: center;
     justify-content: left;
+    margin-top: 20px;
+}
+
+.chat .top{
+    background: white;
+    border-top-left-radius: 106px;
+    border-top-right-radius: 106px;
+    margin-top: -23px;
+    height: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat .top p{
+    font-size: 15px;
+    margin-left: 20px;
+    color: darkgray;
+}
+
+.top-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-item img{
+    width: 15px;
+    height: 15px;
+    margin-left: -10px;
+    margin-right: 15px;
 }
 
 .chat .head .phone{
@@ -60,7 +91,7 @@ body{
     font-size: 10px
 }
 
-.chat img{
+.chat .head img{
     width: 30px;
     border-radius: 50%;
     margin-top: -20px;
@@ -74,7 +105,7 @@ body{
     width: 100%;
     padding: 15px;
     min-height: 250px;
-    margin-top: 50px;
+    margin-top: 15px;
 }
 
 .chat-list .inbox{
@@ -118,7 +149,7 @@ body{
     padding-right: 50px;
     border-radius: 5px;
     border-top-left-radius: -15px;
-
+    outline: none;
 }
 .chat-type::-webkit-scrollbar{
     display: none;
@@ -131,7 +162,7 @@ body{
 
 .chat-send img{
     position: absolute;
-    top: 13px;
+    top: -7px;
     right: 1px;
     border-radius: 30%;
     background: rgb(191, 208, 240);
@@ -153,6 +184,7 @@ body{
     padding: 5px;
     padding-right: 50px;
     border-radius: 5px;
+        outline: none;
 }
 
 .chat-receive{
@@ -164,7 +196,7 @@ body{
 
 .chat-receive img{
     position: absolute;
-    top: 10px;
+    top: -10px;
     right: 1px;
     border-radius: 30%;
     background: rgb(191, 208, 240);
