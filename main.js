@@ -1,52 +1,20 @@
-let titleButtonElement = document.querySelector('.title-button')
-let Formelement = document.querySelector('.chat-form')
-let textareaElement = document.querySelector('.chat-type')
-let UnorderListElement = document.querySelector('.chat-list')
+let titleButtonElement = document.querySelector('.chat-button');
+let chatFormElement = document.querySelector('.chat-form');
+let textareaElement = document.querySelector('.chat-textarea');
+let messagesListElement= document.querySelector('.chat-list');
+
+chatFormElement.onsubmit = function (event){
+	event.preventDefault()
+
+	let newLiElement = document.createElement('li');
+	newLiElement.classList.add('chat-item', 'ketgan');
 
 
-let FormElement = document.querySelector('.chat-form-1')
-let TextAreaElement = document.querySelector('.chat-type-1')
-let GetListElement = document.querySelector('.chat-list')
+	let newMessageTextElement = document.createElement('p');
+	newMessageTextElement.classList.add('chat-text');
+	newMessageTextElement.textContent = textareaElement.value;
 
-
-Formelement.onsubmit = function(event){
-    event.preventDefault()
-    let newElementList = document.createElement('li')
-    newElementList.classList.add('chat-item','inbox')
-    
-    console.log(newElementList );
-
-
-    let newElementText = document.createElement('p')
-    newElementText.classList.add('chat-text')
-
-    newElementText.textContent = textareaElement.value;
-    console.log(newElementText);
-    newElementList.appendChild(newElementText)
-
-    UnorderListElement.appendChild(newElementList)
-
-    Formelement.reset()
-
-    let NewELementText = document.querySelector('p')
-};
-
-FormElement.onsubmit = function(event){
-    event.preventDefault()
-    let NewelementList = document.createElement('li')
-    NewelementList.classList.add('chat-item','outbox');
-    // console.log(NewelementList);
-
-    let NewelementText = document.createElement('p')
-    NewelementText.classList.add('chat-text')
-    // console.log(NewelementText);
-
-    NewelementText.textContent = TextAreaElement.value
-    console.log(NewelementText);
-    NewelementList.appendChild(NewelementText)
-
-    GetListElement.appendChild(NewelementList)
-    
-
-    FormElement.reset()
+	newLiElement.appendChild(newMessageTextElement);
+	messagesListElement.appendChild(newLiElement);
+	
 }
